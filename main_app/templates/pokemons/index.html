@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Pokemon List</h1>
+
+{% for pokemon in pokemons %}
+    <a href="{% url 'detail' pokemon.id %}">
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">{{ pokemon.name }}</span>
+            <p>Breed: {{ pokemon.type }}</p>
+            <p>Description: {{ pokemon.description|linebreaks }}</p>
+            {% if pokemon.age > 0 %}
+            <p>Age: {{ pokemon.age }}</p>
+            {% else %}
+            <p>Age: Baby Pokemon</p>
+            {% endif %}        
+        </div>
+    </div>
+    </a>
+
+
+
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,22 @@
+[
+{
+  "model": "main_app.pokemon",
+  "pk": 1,
+  "fields": {
+    "name": "Pikachu",
+    "breed": "Electric",
+    "description": "Cute Mouse",
+    "age": 10
+  }
+},
+{
+  "model": "main_app.pokemon",
+  "pk": 2,
+  "fields": {
+    "name": "Charmander",
+    "breed": "Fire",
+    "description": "Loves Fire",
+    "age": 12
+  }
+}
+]
